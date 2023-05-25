@@ -18,6 +18,9 @@
                                 <li><a class="{{ Route::currentRouteName() == 'account.dashboard' ? 'active' : '' }}"
                                         href="{{ route('account.dashboard') }}"><i class="lni lni-dashboard"></i>
                                         Dashboard</a></li>
+                                <li><a class="{{ Route::currentRouteName() == 'account.request' ? 'active' : '' }}"
+                                        href="{{ route('account.request') }}"><i class="lni lni-support"></i>
+                                        Request</a></li>
                                 <li><a class="{{ Route::currentRouteName() == 'account.settings' ? 'active' : '' }}"
                                         href="{{ route('account.settings') }}"><i class="lni lni-pencil-alt"></i> Edit
                                         Profile</a>
