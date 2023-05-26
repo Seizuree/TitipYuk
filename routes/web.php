@@ -71,8 +71,6 @@ Route::get('/dashboard/request', function () {
 Route::get('/dashboard', function () {
     return view('dashboard.home');
 })->name("account.dashboard");
-
-
 Route::get('/consignee', function () {
     return view('consignee.list');
 })->name("consignee.list");

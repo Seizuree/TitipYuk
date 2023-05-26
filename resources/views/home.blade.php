@@ -6,17 +6,15 @@
             <div class="row align-items-center">
                 <div class="col-lg-7 col-md-12 col-12">
                     <div class="hero-text wow fadeInLeft" data-wow-delay=".3s">
-
                         <div class="section-heading">
                             <h2>Welcome to TitipYuk</h2>
-                            <p>STitipYuk helps to streamline the
+                            <p>TitipYuk helps to streamline the
                                 consignment sales process and increase the visibility of local food businesses</p>
                         </div>
-
                     </div>
                 </div>
-                <div class="col-lg-5 col-md-12 col-12">
 
+                <div class="col-lg-5 col-md-12 col-12">
                     <div class="search-form style2 wow fadeInRight" data-wow-delay=".5s">
                         <h3 class="heading-title">Search Here</h3>
                         <p class="sub-heding-text">There are many variations of consignee available</p>
@@ -62,12 +60,10 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
-
 
     <section class="categories style2">
         <div class="container">
@@ -84,7 +80,6 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-2 col-md-3 col-12">
-
                         <a href="/consignee" class="single-cat wow fadeInUp" data-wow-delay=".2s">
                             <div class="fs-2" style="color: #5c34e4">
                                 <i class="lni lni-dinner"></i>
@@ -92,10 +87,9 @@
                             <h3>Restaurant</h3>
                             <h5 class="total">35</h5>
                         </a>
-
                     </div>
-                    <div class="col-lg-2 col-md-3 col-12">
 
+                    <div class="col-lg-2 col-md-3 col-12">
                         <a href="/consignee" class="single-cat wow fadeInUp" data-wow-delay=".4s">
                             <div class="fs-2" style="color: #5c34e4">
                                 <i class="lni lni-home"></i>
@@ -103,10 +97,9 @@
                             <h3>Grocery Store</h3>
                             <h5 class="total">22</h5>
                         </a>
-
                     </div>
-                    <div class="col-lg-2 col-md-3 col-12">
 
+                    <div class="col-lg-2 col-md-3 col-12">
                         <a href="/consignee" class="single-cat wow fadeInUp" data-wow-delay=".6s">
                             <div class="fs-2" style="color: #5c34e4">
                                 <i class="lni lni-bolt"></i>
@@ -114,10 +107,9 @@
                             <h3>Minimarket</h3>
                             <h5 class="total">55</h5>
                         </a>
-
                     </div>
-                    <div class="col-lg-2 col-md-3 col-12">
 
+                    <div class="col-lg-2 col-md-3 col-12">
                         <a href="/consignee" class="single-cat wow fadeInUp" data-wow-delay=".8s">
                             <div class="fs-2" style="color: #5c34e4">
                                 <i class="lni lni-coffee-cup"></i>
@@ -125,10 +117,9 @@
                             <h3>Coffee Shop</h3>
                             <h5 class="total">21</h5>
                         </a>
-
                     </div>
-                    <div class="col-lg-2 col-md-3 col-12">
 
+                    <div class="col-lg-2 col-md-3 col-12">
                         <a href="/consignee" class="single-cat wow fadeInUp" data-wow-delay="1s">
                             <div class="fs-2" style="color: #5c34e4">
                                 <i class="lni lni-burger"></i>
@@ -136,10 +127,9 @@
                             <h3>Cafe</h3>
                             <h5 class="total">44</h5>
                         </a>
-
                     </div>
-                    <div class="col-lg-2 col-md-3 col-12">
 
+                    <div class="col-lg-2 col-md-3 col-12">
                         <a href="/consignee" class="single-cat wow fadeInUp" data-wow-delay="1.2s">
                             <div class="fs-2" style="color: #5c34e4">
                                 <i class="lni lni-question-circle"></i>
@@ -147,7 +137,6 @@
                             <h3>Others</h3>
                             <h5 class="total">65</h5>
                         </a>
-
                     </div>
                 </div>
             </div>
@@ -201,7 +190,6 @@
                     <div class="choose-content">
                         <div class="row">
                             <div class="col-lg-4 col-md-6 col-12">
-
                                 <div class="single-list wow fadeInUp" data-wow-delay=".2s">
                                     <i class="lni lni-book"></i>
                                     <h4>Easy to use</h4>
@@ -210,10 +198,9 @@
                                         most suitable consignees for your products and manage your consignment sales
                                         hassle-free.</p>
                                 </div>
-
                             </div>
-                            <div class="col-lg-4 col-md-6 col-12">
 
+                            <div class="col-lg-4 col-md-6 col-12">
                                 <div class="single-list wow fadeInUp" data-wow-delay=".4s">
                                     <i class="lni lni-leaf"></i>
                                     <h4>Reliable and efficient service</h4>
@@ -222,10 +209,9 @@
                                         visibility of your products. You can trust us to provide a secure and hassle-free
                                         platform for all your consignment sales needs.</p>
                                 </div>
-
                             </div>
-                            <div class="col-lg-4 col-md-6 col-12">
 
+                            <div class="col-lg-4 col-md-6 col-12">
                                 <div class="single-list wow fadeInUp" data-wow-delay=".6s">
                                     <i class="lni lni-laptop-phone"></i>
                                     <h4>Fully Responsive</h4>
@@ -236,7 +222,6 @@
                                         can rest assured that your experience will be smooth and hassle-free, no matter what
                                         device you use.</p>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -282,10 +267,12 @@
                                 aria-selected="true">Latest Consignee</button>
                             <button class="nav-link" id="nav-popular-tab" data-bs-toggle="tab"
                                 data-bs-target="#nav-popular" type="button" role="tab" aria-controls="nav-popular"
-                                aria-selected="false">Popular Consignee</button>
+                                aria-selected="false">Popular
+                                Consignee</button>
                             <button class="nav-link" id="nav-random-tab" data-bs-toggle="tab"
                                 data-bs-target="#nav-random" type="button" role="tab" aria-controls="nav-random"
-                                aria-selected="false">Random Consignee</button>
+                                aria-selected="false">Random
+                                Consignee</button>
                         </div>
                     </nav>
                     <div class="tab-content" id="nav-tabContent">
@@ -293,7 +280,6 @@
                             aria-labelledby="nav-latest-tab">
                             <div class="row">
                                 <div class="col-lg-3 col-md-4 col-12">
-
                                     <div class="single-item-grid">
                                         <div class="image">
                                             <a href="item-details.html"><img src="assets/images/items-tab/item-1.jpg"
@@ -316,10 +302,9 @@
                                             </ul>
                                         </div>
                                     </div>
-
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-12">
 
+                                <div class="col-lg-3 col-md-4 col-12">
                                     <div class="single-item-grid">
                                         <div class="image">
                                             <a href="item-details.html"><img src="assets/images/items-tab/item-2.jpg"
@@ -342,10 +327,9 @@
                                             </ul>
                                         </div>
                                     </div>
-
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-12">
 
+                                <div class="col-lg-3 col-md-4 col-12">
                                     <div class="single-item-grid">
                                         <div class="image">
                                             <a href="item-details.html"><img src="assets/images/items-tab/item-3.jpg"
@@ -368,10 +352,9 @@
                                             </ul>
                                         </div>
                                     </div>
-
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-12">
 
+                                <div class="col-lg-3 col-md-4 col-12">
                                     <div class="single-item-grid">
                                         <div class="image">
                                             <a href="item-details.html"><img src="assets/images/items-tab/item-4.jpg"
@@ -394,10 +377,9 @@
                                             </ul>
                                         </div>
                                     </div>
-
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-12">
 
+                                <div class="col-lg-3 col-md-4 col-12">
                                     <div class="single-item-grid">
                                         <div class="image">
                                             <a href="item-details.html"><img src="assets/images/items-tab/item-5.jpg"
@@ -420,10 +402,9 @@
                                             </ul>
                                         </div>
                                     </div>
-
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-12">
 
+                                <div class="col-lg-3 col-md-4 col-12">
                                     <div class="single-item-grid">
                                         <div class="image">
                                             <a href="item-details.html"><img src="assets/images/items-tab/item-6.jpg"
@@ -446,10 +427,9 @@
                                             </ul>
                                         </div>
                                     </div>
-
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-12">
 
+                                <div class="col-lg-3 col-md-4 col-12">
                                     <div class="single-item-grid">
                                         <div class="image">
                                             <a href="item-details.html"><img src="assets/images/items-tab/item-7.jpg"
@@ -472,10 +452,9 @@
                                             </ul>
                                         </div>
                                     </div>
-
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-12">
 
+                                <div class="col-lg-3 col-md-4 col-12">
                                     <div class="single-item-grid">
                                         <div class="image">
                                             <a href="item-details.html"><img src="assets/images/items-tab/item-8.jpg"
@@ -498,14 +477,12 @@
                                             </ul>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="nav-popular" role="tabpanel" aria-labelledby="nav-popular-tab">
                             <div class="row">
                                 <div class="col-lg-3 col-md-4 col-12">
-
                                     <div class="single-item-grid">
                                         <div class="image">
                                             <a href="item-details.html"><img src="assets/images/items-tab/item-2.jpg"
@@ -528,10 +505,9 @@
                                             </ul>
                                         </div>
                                     </div>
-
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-12">
 
+                                <div class="col-lg-3 col-md-4 col-12">
                                     <div class="single-item-grid">
                                         <div class="image">
                                             <a href="item-details.html"><img src="assets/images/items-tab/item-3.jpg"
@@ -554,10 +530,9 @@
                                             </ul>
                                         </div>
                                     </div>
-
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-12">
 
+                                <div class="col-lg-3 col-md-4 col-12">
                                     <div class="single-item-grid">
                                         <div class="image">
                                             <a href="item-details.html"><img src="assets/images/items-tab/item-1.jpg"
@@ -580,10 +555,9 @@
                                             </ul>
                                         </div>
                                     </div>
-
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-12">
 
+                                <div class="col-lg-3 col-md-4 col-12">
                                     <div class="single-item-grid">
                                         <div class="image">
                                             <a href="item-details.html"><img src="assets/images/items-tab/item-4.jpg"
@@ -606,10 +580,9 @@
                                             </ul>
                                         </div>
                                     </div>
-
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-12">
 
+                                <div class="col-lg-3 col-md-4 col-12">
                                     <div class="single-item-grid">
                                         <div class="image">
                                             <a href="item-details.html"><img src="assets/images/items-tab/item-7.jpg"
@@ -632,10 +605,9 @@
                                             </ul>
                                         </div>
                                     </div>
-
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-12">
 
+                                <div class="col-lg-3 col-md-4 col-12">
                                     <div class="single-item-grid">
                                         <div class="image">
                                             <a href="item-details.html"><img src="assets/images/items-tab/item-8.jpg"
@@ -658,10 +630,9 @@
                                             </ul>
                                         </div>
                                     </div>
-
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-12">
 
+                                <div class="col-lg-3 col-md-4 col-12">
                                     <div class="single-item-grid">
                                         <div class="image">
                                             <a href="item-details.html"><img src="assets/images/items-tab/item-5.jpg"
@@ -684,10 +655,9 @@
                                             </ul>
                                         </div>
                                     </div>
-
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-12">
 
+                                <div class="col-lg-3 col-md-4 col-12">
                                     <div class="single-item-grid">
                                         <div class="image">
                                             <a href="item-details.html"><img src="assets/images/items-tab/item-6.jpg"
@@ -710,14 +680,12 @@
                                             </ul>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="nav-random" role="tabpanel" aria-labelledby="nav-random-tab">
                             <div class="row">
                                 <div class="col-lg-3 col-md-4 col-12">
-
                                     <div class="single-item-grid">
                                         <div class="image">
                                             <a href="item-details.html"><img src="assets/images/items-tab/item-3.jpg"
@@ -740,10 +708,9 @@
                                             </ul>
                                         </div>
                                     </div>
-
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-12">
 
+                                <div class="col-lg-3 col-md-4 col-12">
                                     <div class="single-item-grid">
                                         <div class="image">
                                             <a href="item-details.html"><img src="assets/images/items-tab/item-4.jpg"
@@ -766,10 +733,9 @@
                                             </ul>
                                         </div>
                                     </div>
-
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-12">
 
+                                <div class="col-lg-3 col-md-4 col-12">
                                     <div class="single-item-grid">
                                         <div class="image">
                                             <a href="item-details.html"><img src="assets/images/items-tab/item-5.jpg"
@@ -792,10 +758,9 @@
                                             </ul>
                                         </div>
                                     </div>
-
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-12">
 
+                                <div class="col-lg-3 col-md-4 col-12">
                                     <div class="single-item-grid">
                                         <div class="image">
                                             <a href="item-details.html"><img src="assets/images/items-tab/item-1.jpg"
@@ -818,10 +783,9 @@
                                             </ul>
                                         </div>
                                     </div>
-
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-12">
 
+                                <div class="col-lg-3 col-md-4 col-12">
                                     <div class="single-item-grid">
                                         <div class="image">
                                             <a href="item-details.html"><img src="assets/images/items-tab/item-2.jpg"
@@ -844,10 +808,9 @@
                                             </ul>
                                         </div>
                                     </div>
-
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-12">
 
+                                <div class="col-lg-3 col-md-4 col-12">
                                     <div class="single-item-grid">
                                         <div class="image">
                                             <a href="item-details.html"><img src="assets/images/items-tab/item-6.jpg"
@@ -870,10 +833,9 @@
                                             </ul>
                                         </div>
                                     </div>
-
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-12">
 
+                                <div class="col-lg-3 col-md-4 col-12">
                                     <div class="single-item-grid">
                                         <div class="image">
                                             <a href="item-details.html"><img src="assets/images/items-tab/item-7.jpg"
@@ -896,10 +858,9 @@
                                             </ul>
                                         </div>
                                     </div>
-
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-12">
 
+                                <div class="col-lg-3 col-md-4 col-12">
                                     <div class="single-item-grid">
                                         <div class="image">
                                             <a href="item-details.html"><img src="assets/images/items-tab/item-8.jpg"
@@ -922,7 +883,6 @@
                                             </ul>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -944,7 +904,6 @@
             </div>
             <div class="row testimonial-slider">
                 <div class="col-lg-4 col-md-6 col-12">
-
                     <div class="single-testimonial">
                         <div class="quote-icon">
                             <i class="lni lni-quotation"></i>
@@ -964,10 +923,9 @@
                                 definitely be recommending TitipYuk to my readers."</p>
                         </div>
                     </div>
-
                 </div>
-                <div class="col-lg-4 col-md-6 col-12">
 
+                <div class="col-lg-4 col-md-6 col-12">
                     <div class="single-testimonial">
                         <div class="quote-icon">
                             <i class="lni lni-quotation"></i>
@@ -986,10 +944,9 @@
                                 provides."</p>
                         </div>
                     </div>
-
                 </div>
-                <div class="col-lg-4 col-md-6 col-12">
 
+                <div class="col-lg-4 col-md-6 col-12">
                     <div class="single-testimonial">
                         <div class="quote-icon">
                             <i class="lni lni-quotation"></i>
@@ -1008,7 +965,6 @@
                                 looking to expand their product offerings."</p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -1026,7 +982,6 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-12">
-
                     <div class="single-work wow fadeInUp" data-wow-delay=".2s">
                         <span class="serial">01</span>
                         <h3>Create Account</h3>
@@ -1034,27 +989,24 @@
                             who gives the goods to the consignee for selling, and Consignee is the person who receives the
                             goods from the consignor for selling..</p>
                     </div>
-
                 </div>
-                <div class="col-lg-4 col-md-4 col-12">
 
+                <div class="col-lg-4 col-md-4 col-12">
                     <div class="single-work wow fadeInUp" data-wow-delay=".4s">
                         <span class="serial">02</span>
                         <h3>Add your products or places</h3>
                         <p>Add your products so consignee can see the details when you apply for consign or add your place.
                             so consignor can consign at your place</p>
                     </div>
-
                 </div>
-                <div class="col-lg-4 col-md-4 col-12">
 
+                <div class="col-lg-4 col-md-4 col-12">
                     <div class="single-work wow fadeInUp" data-wow-delay=".6s">
                         <span class="serial">03</span>
                         <h3>Consign</h3>
                         <p>If you are consignor, you can start to consign at places that listed. If you are a consignee,
                             relax and wait consignor to request consign</p>
                     </div>
-
                 </div>
             </div>
         </div>
