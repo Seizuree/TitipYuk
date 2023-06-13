@@ -83,7 +83,7 @@
                                                 <a href="{{ route('account.messages') }}">messages</a>
                                             </li>
                                             <hr>
-                                            @if(session('isConsignee'))
+                                            @if (session('isConsignee'))
                                                 <li
                                                     class="nav-item {{ Route::currentRouteName() == 'account.dashboard' ? 'active' : '' }}">
                                                     <a href="{{ route('account.dashboard') }}">Dashboard</a>
@@ -98,34 +98,38 @@
                                                 </li>
                                             @endif
                                             <hr>
-                                            @if(session('isConsignor'))
-                                            <li
-                                                class="nav-item {{ Route::currentRouteName() == 'account.dashboard' ? 'active' : '' }}">
-                                                <a href="/dashboard/">Dashboard</a>
-                                            </li>
-                                            <li
-                                                class="nav-item {{ Route::currentRouteName() == 'account.places' ? 'active' : '' }}">
-                                                <a href="{{ route('account.places') }}">My Places</a>
-                                            </li>
-                                            <li
-                                                class="nav-item {{ Route::currentRouteName() == 'account.place-add' ? 'active' : '' }}">
-                                                <a href="{{ route('account.place-add') }}">Add Place</a>
-                                            </li>
+                                            @if (session('isConsignor'))
+                                                <li
+                                                    class="nav-item {{ Route::currentRouteName() == 'account.dashboard' ? 'active' : '' }}">
+                                                    <a href="/dashboard/">Dashboard</a>
+                                                </li>
+                                                <li
+                                                    class="nav-item {{ Route::currentRouteName() == 'account.places' ? 'active' : '' }}">
+                                                    <a href="{{ route('account.places') }}">My Places</a>
+                                                </li>
+                                                <li
+                                                    class="nav-item {{ Route::currentRouteName() == 'account.place-add' ? 'active' : '' }}">
+                                                    <a href="{{ route('account.place-add') }}">Add Place</a>
+                                                </li>
                                             @endif
                                         </ul>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="login-button">
-                                <ul>
-                                    <li>
-                                        <a href="/login"><i class="lni lni-enter"></i> Login</a>
-                                    </li>
-                                    <li>
-                                        <a href="/register"><i class="lni lni-user"></i> Register</a>
-                                    </li>
-                                </ul>
-                            </div>
+                            @if (session('isConsignor') || session('isConsignee'))
+                                <h1>AWIKWOK</h1>
+                            @else
+                                <div class="login-button">
+                                    <ul>
+                                        <li>
+                                            <a href="/login"><i class="lni lni-enter"></i> Login</a>
+                                        </li>
+                                        <li>
+                                            <a href="/register"><i class="lni lni-user"></i> Register</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            @endauth
                         </nav>
                     </div>
                 </div>
