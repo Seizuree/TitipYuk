@@ -117,7 +117,20 @@
                                 </ul>
                             </div>
                             @if (session('isConsignor') || session('isConsignee'))
-                                <h1>AWIKWOK</h1>
+                                <div class="auth-container">
+                                    <div class="dropdown">
+                                        <div class="dropdown-content">
+                                            <div class="greetings">
+                                                @if (session('isConsignee'))
+                                                    Hi, <strong>{{session('name')}}</strong>
+                                                    <br>
+                                                @endif
+                                            </div>
+                                            <hr class="line">
+                                            <a href="/logout">Sign out</a>
+                                        </div>
+                                    </div>
+                                </div>
                             @else
                                 <div class="login-button">
                                     <ul>
@@ -130,82 +143,82 @@
                                     </ul>
                                 </div>
                             @endauth
-                        </nav>
-                    </div>
+                    </nav>
                 </div>
             </div>
         </div>
-    </header>
-    <!-- End Header Area -->
+    </div>
+</header>
+<!-- End Header Area -->
 
-    @hasSection('title')
-        <div class="breadcrumbs">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-6 col-12">
-                        <div class="breadcrumbs-content">
-                            <h1 class="page-title">@yield('title')</h1>
+@hasSection('title')
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="breadcrumbs-content">
+                        <h1 class="page-title">@yield('title')</h1>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <ul class="breadcrumb-nav">
+                        <li><a href="/">Home</a></li>
+                        <li>@yield('title')</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+@endif
+
+@yield('content')
+
+<!-- Start Footer Area -->
+<footer class="footer">
+    <!-- Start Footer Bottom -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="inner">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <ul class="footer-bottom-links">
+                                <li><a href="{{ route('about-us') }}">About us</a></li>
+                                <li><a href="{{ route('faq') }}">FAQ</a></li>
+                                <li><a href="{{ route('contact') }}">Contact</a></li>
+                            </ul>
+                            <p class="copyright-text">Template Design by <a href="https://graygrids.com/"
+                                    rel="nofollow" target="_blank">GrayGrids</a> with modified
+                            </p>
+                            <ul class="footer-social">
+                                <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="#"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="#"><i class="lni lni-youtube"></i></a></li>
+                                <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-12">
-                        <ul class="breadcrumb-nav">
-                            <li><a href="/">Home</a></li>
-                            <li>@yield('title')</li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
-    @endif
+    </div>
+    <!-- End Footer Middle -->
+</footer>
+<!--/ End Footer Area -->
 
-    @yield('content')
+<!-- ========================= scroll-top ========================= -->
+<a href="#" class="scroll-top btn-hover">
+    <i class="lni lni-chevron-up"></i>
+</a>
 
-    <!-- Start Footer Area -->
-    <footer class="footer">
-        <!-- Start Footer Bottom -->
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="inner">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="content">
-                                <ul class="footer-bottom-links">
-                                    <li><a href="{{ route('about-us') }}">About us</a></li>
-                                    <li><a href="{{ route('faq') }}">FAQ</a></li>
-                                    <li><a href="{{ route('contact') }}">Contact</a></li>
-                                </ul>
-                                <p class="copyright-text">Template Design by <a href="https://graygrids.com/"
-                                        rel="nofollow" target="_blank">GrayGrids</a> with modified
-                                </p>
-                                <ul class="footer-social">
-                                    <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
-                                    <li><a href="#"><i class="lni lni-twitter-original"></i></a></li>
-                                    <li><a href="#"><i class="lni lni-youtube"></i></a></li>
-                                    <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Footer Middle -->
-    </footer>
-    <!--/ End Footer Area -->
-
-    <!-- ========================= scroll-top ========================= -->
-    <a href="#" class="scroll-top btn-hover">
-        <i class="lni lni-chevron-up"></i>
-    </a>
-
-    <!-- ========================= JS here ========================= -->
-    {{-- <script src="{{ asset('assets/js/bootstrap.js') }}"></script> --}}
-    <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('assets/js/wow.min.js') }}"></script>
-    <script src="{{ asset('assets/js/tiny-slider.js') }}"></script>
-    <script src="{{ asset('assets/js/glightbox.min.js') }}"></script>
-    <script src="{{ asset('assets/js/main.js') }}"></script>
-    @yield('custom-js')
+<!-- ========================= JS here ========================= -->
+{{-- <script src="{{ asset('assets/js/bootstrap.js') }}"></script> --}}
+<script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ asset('assets/js/wow.min.js') }}"></script>
+<script src="{{ asset('assets/js/tiny-slider.js') }}"></script>
+<script src="{{ asset('assets/js/glightbox.min.js') }}"></script>
+<script src="{{ asset('assets/js/main.js') }}"></script>
+@yield('custom-js')
 </body>
 
 </html>

@@ -25,12 +25,14 @@ class AuthController extends Controller
 
         $isConsignee = Consignee::where('email', $req->email)->where('pass', $req->password)->first();
         $isConsignor = Consignor::where('email', $req->email)->where('pass', $req->password)->first();
-
+        
         if ($isConsignee || $isConsignor) {
             if ($isConsignee) {
-                $req->session()->put('isConsignee', true);
+                $req->session()->put('isConsignee', $isConsignee);
+                $req->session()->put('name', $isConsignee->name);
             } else {
-                $req->session()->put('isConsignor', true);
+                $req->session()->put('isConsignor', $isConsignor);
+                $req->session()->put('name', $isConsignor->name);
             }
             return redirect('/');
         }
@@ -38,5 +40,12 @@ class AuthController extends Controller
         return back()->withErrors([
             'notmatch' => 'Your credentials are invalid'
         ]);
+    }
+
+    public function logout(Request $req){
+        $req->session()->forget('isConsignee');
+        $req->session()->forget('name');
+
+        return redirect('/');
     }
 }

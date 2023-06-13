@@ -83,3 +83,5 @@ Route::get('/consignee/1', function () {
 Route::get('/consignee/{place_id}/consign', function () {
     return view('consignee.consign');
 })->name("consignee.consign");
+
+Route::get('/logout', [AuthController::class, 'logout']);
