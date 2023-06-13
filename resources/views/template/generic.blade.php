@@ -83,19 +83,22 @@
                                                 <a href="{{ route('account.messages') }}">messages</a>
                                             </li>
                                             <hr>
-                                            <li
-                                                class="nav-item {{ Route::currentRouteName() == 'account.dashboard' ? 'active' : '' }}">
-                                                <a href="{{ route('account.dashboard') }}">Dashboard</a>
-                                            </li>
-                                            <li
-                                                class="nav-item {{ Route::currentRouteName() == 'account.products' ? 'active' : '' }}">
-                                                <a href="{{ route('account.product-add') }}">My Products</a>
-                                            </li>
-                                            <li
-                                                class="nav-item {{ Route::currentRouteName() == 'account.product-add' ? 'active' : '' }}">
-                                                <a href="{{ route('account.product-add') }}">Add Product</a>
-                                            </li>
+                                            @if(session('isConsignee'))
+                                                <li
+                                                    class="nav-item {{ Route::currentRouteName() == 'account.dashboard' ? 'active' : '' }}">
+                                                    <a href="{{ route('account.dashboard') }}">Dashboard</a>
+                                                </li>
+                                                <li
+                                                    class="nav-item {{ Route::currentRouteName() == 'account.products' ? 'active' : '' }}">
+                                                    <a href="{{ route('account.product-add') }}">My Products</a>
+                                                </li>
+                                                <li
+                                                    class="nav-item {{ Route::currentRouteName() == 'account.product-add' ? 'active' : '' }}">
+                                                    <a href="{{ route('account.product-add') }}">Add Product</a>
+                                                </li>
+                                            @endif
                                             <hr>
+                                            @if(session('isConsignor'))
                                             <li
                                                 class="nav-item {{ Route::currentRouteName() == 'account.dashboard' ? 'active' : '' }}">
                                                 <a href="/dashboard/">Dashboard</a>
@@ -108,6 +111,7 @@
                                                 class="nav-item {{ Route::currentRouteName() == 'account.place-add' ? 'active' : '' }}">
                                                 <a href="{{ route('account.place-add') }}">Add Place</a>
                                             </li>
+                                            @endif
                                         </ul>
                                     </li>
                                 </ul>
