@@ -187,9 +187,6 @@
                                 <li><a href="{{ route('faq') }}">FAQ</a></li>
                                 <li><a href="{{ route('contact') }}">Contact</a></li>
                             </ul>
-                            <p class="copyright-text">Template Design by <a href="https://graygrids.com/"
-                                    rel="nofollow" target="_blank">GrayGrids</a> with modified
-                            </p>
                             <ul class="footer-social">
                                 <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
                                 <li><a href="#"><i class="lni lni-twitter-original"></i></a></li>
