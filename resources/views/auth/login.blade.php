@@ -9,7 +9,8 @@
                 <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-12">
                     <div class="form-head">
                         <h4 class="title">Login</h4>
-                        <form action="#!" method="post">
+                        <form action="/login" method="post">
+                            @csrf
                             <div class="form-group">
                                 <label>Username or email</label>
                                 <input name="email" type="email" placeholder="email@domain.com">
@@ -31,6 +32,11 @@
                                         <a href="javascript:void(0)" class="lost-pass">Lost your password?</a>
                                     </div>
                                 </div>
+                            </div>
+                            <div>
+                                @error('notmatch')
+                                <strong class="error-msg">{{ $message }}</strong>
+                                @enderror
                             </div>
                             <div class="button">
                                 <button type="submit" class="btn">Login Now</button>

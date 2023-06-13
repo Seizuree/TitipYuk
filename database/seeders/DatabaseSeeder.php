@@ -3,6 +3,9 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Models\Consignee;
+use App\Models\Consignor;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -18,5 +21,20 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+        $this->call(ConsigneeSeeder::class);
+        $this->call(ConsignorSeeder::class);
+        $this->call(ProductCategorySeeder::class);
+        $this->call(MarketCategorySeeder::class);
+        $this->call(ProductCategorySeeder::class);
+        $this->call(MarketCategorySeeder::class);
+        $this->call(ProductSeeder::class);
+        $this->call(MarketSeeder::class);
+        $this->call(MessageSeeder::class);
+        $this->call(ProductReturnSeeder::class);
+        $this->call(ConsignTransactionSeeder::class);
+        $this->call(PaymentSeeder::class);
+        $this->call(PaymentDetailSeeder::class);
+        $this->call(ProductReturnDetailSeeder::class);
+
     }
 }
