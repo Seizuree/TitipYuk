@@ -82,8 +82,8 @@
                                                 class="nav-item {{ Route::currentRouteName() == 'account.messages' ? 'active' : '' }}">
                                                 <a href="{{ route('account.messages') }}">messages</a>
                                             </li>
-                                            <hr>
                                             @if (session('isConsignee'))
+                                            <hr>
                                                 <li
                                                     class="nav-item {{ Route::currentRouteName() == 'account.dashboard' ? 'active' : '' }}">
                                                     <a href="{{ route('account.dashboard') }}">Dashboard</a>
@@ -97,8 +97,8 @@
                                                     <a href="{{ route('account.product-add') }}">Add Product</a>
                                                 </li>
                                             @endif
-                                            <hr>
                                             @if (session('isConsignor'))
+                                            <hr>
                                                 <li
                                                     class="nav-item {{ Route::currentRouteName() == 'account.dashboard' ? 'active' : '' }}">
                                                     <a href="/dashboard/">Dashboard</a>
@@ -124,10 +124,16 @@
                                                 @if (session('isConsignee'))
                                                     Hi, <strong>{{session('name')}}</strong>
                                                     <br>
+                                                    <hr class="line">
                                                 @endif
                                             </div>
-                                            <hr class="line">
-                                            <a href="/logout">Sign out</a>
+                                            <div class="login-button">
+                                                <ul>
+                                                    <li>
+                                                        <a href="/logout">Sign out</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
