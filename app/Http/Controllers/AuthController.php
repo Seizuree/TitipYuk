@@ -44,6 +44,7 @@ class AuthController extends Controller
 
     public function logout(Request $req){
         $req->session()->forget('isConsignee');
+        $req->session()->forget('isConsignor');
         $req->session()->forget('name');
 
         return redirect('/');

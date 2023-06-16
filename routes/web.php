@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ProductController;
+use App\Models\Product;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,21 +28,18 @@ Route::get('/faq', function () {
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
-// Route::get('/template', function () {
-//     return view('template.generic');
-// });
 Route::get('/login', function () {
     return view('auth.login');
 })->name("login");
-
 Route::post('/login', [AuthController::class, 'login']);
 Route::get('/register', function () {
     return view('auth.register');
 })->name("register");
-
+Route::get('/logout', [AuthController::class, 'logout']);
 Route::get('/dashboard/account/delete-account', function () {
     return view('dashboard.account.delete');
 })->name("account.delete");
+
 Route::get('/dashboard/account/settings', function () {
     return view('dashboard.account.settings');
 })->name("account.settings");
@@ -50,9 +49,8 @@ Route::get('/account/messages', function () {
 Route::get('/dashboard/product', function () {
     return view('dashboard.consignor.product');
 })->name("account.products");
-Route::get('/dashboard/product/add', function () {
-    return view('dashboard.consignor.product-add');
-})->name("account.product-add");
+Route::get('/dashboard/product/add', [ProductController::class, 'addProductShowCategory'])->name("account.product-add");
+Route::post('/dashboard/product/add', [ProductController::class, 'addProduct'])->name("product.add");
 Route::get('/dashboard/product/return', function () {
     return view('dashboard.consignor.product-return');
 })->name("account.product-return");
@@ -83,5 +81,3 @@ Route::get('/consignee/1', function () {
 Route::get('/consignee/{place_id}/consign', function () {
     return view('consignee.consign');
 })->name("consignee.consign");
-
-Route::get('/logout', [AuthController::class, 'logout']);

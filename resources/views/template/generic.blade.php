@@ -83,7 +83,7 @@
                                                 <a href="{{ route('account.messages') }}">messages</a>
                                             </li>
                                             @if (session('isConsignee'))
-                                            <hr>
+                                                <hr>
                                                 <li
                                                     class="nav-item {{ Route::currentRouteName() == 'account.dashboard' ? 'active' : '' }}">
                                                     <a href="{{ route('account.dashboard') }}">Dashboard</a>
@@ -98,7 +98,7 @@
                                                 </li>
                                             @endif
                                             @if (session('isConsignor'))
-                                            <hr>
+                                                <hr>
                                                 <li
                                                     class="nav-item {{ Route::currentRouteName() == 'account.dashboard' ? 'active' : '' }}">
                                                     <a href="/dashboard/">Dashboard</a>
@@ -120,15 +120,13 @@
                                 <div class="auth-container">
                                     <div class="dropdown">
                                         <div class="dropdown-content">
-                                            <div class="greetings">
-                                                @if (session('isConsignee'))
-                                                    Hi, <strong>{{session('name')}}</strong>
-                                                    <br>
-                                                    <hr class="line">
-                                                @endif
-                                            </div>
                                             <div class="login-button">
                                                 <ul>
+                                                    <li>
+                                                        @if (session('isConsignee') || session('isConsignor'))
+                                                            Hi, <strong>{{ session('name') }}</strong>
+                                                        @endif
+                                                    </li>
                                                     <li>
                                                         <a href="/logout">Sign out</a>
                                                     </li>
